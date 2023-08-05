@@ -1,0 +1,249 @@
+.search{
+  text-align: center;
+  margin-top: 30px;
+  position: relative;
+}
+.search input{
+  padding: 5px;
+  font-size: 20px;
+  font-weight: 500;
+}
+.search span{
+  margin: 0px 10px;
+  font-size: 30px;
+  font-weight: 400;
+}
+.bars {
+  font-size: 35px;
+  position: absolute;
+  top: 10px;
+  left: 50px;
+  display: block;
+}
+.categories_div span:hover {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  border: 1px solid #098be8d7;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow:none;
+  transform: scale(1.1);
+}
+.categories_menu {
+  margin-top: 40px;
+  margin-left: 10px;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.categories_div {
+  margin-left: 10px;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.categories_div span {
+  text-decoration: none;
+  width: 100%;
+  color: black;
+  text-transform: uppercase;
+  /* box-shadow:5px 3px 3px #000; */
+  padding: 6px;
+  border: 1px solid #098be8d7;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 600;
+  transition: .4s;
+  cursor: pointer;
+  transition: .5s;
+}
+.main-box {
+  display: flex;
+  flex-wrap: wrap;
+}
+.link{
+  text-decoration: none;
+  color: #000;
+  list-style: none;
+}
+.box {
+  background-color: #F2ECE9;
+  padding: 20px;
+  box-shadow: #d1c6bd 0px 30px 60px -12px inset, #d1c6bd 0px 18px 36px -18px inset;
+  width: 23%; 
+  margin: 20px;   
+  border-radius: 4px;
+  margin-left: 5px;
+  transition: box-shadow 0.3s, transform 0.3s;
+  position: relative;
+  overflow: hidden;
+  transition: .6s;
+}
+.box:hover {
+  /* background: linear-gradient(45deg, #ffd700, #000000); */
+  box-shadow: #d1c6bd 0px 30px 60px -12px, #d1c6bd 0px 18px 36px -18px;
+  transform: scale(1.05);
+  background-color: #d1c6bd !important;
+}
+.box:before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s;
+  pointer-events: none;
+}
+.box:hover:before {
+  opacity: 1;
+}
+.box-image img {
+  height: 200px;
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+.box-items {
+  text-align: center;
+}
+.category{
+  display: block;
+}
+h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #000 !important;
+}
+.description {
+  font-size: 14px;
+  color: #888888;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.price {
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+}
+
+.discount {
+  font-size: 16px;
+  text-decoration: line-through;
+  margin-left: 5px;
+  color: #0000;
+}
+
+.stars {
+  color: gold;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.rating {
+  font-size: 15px;
+  color: #000;
+}
+
+/* ------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------- */
+header{
+  background-color: #d1c6bd;
+  box-shadow: 0 0 10px black;
+  align-items: center;
+}
+.menu{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
+.logo img{
+  width: 200px;
+}
+ul{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+.Main_menu{
+  display: flex;
+  align-items: center;
+}
+.Main_menu li a{
+  padding: 35px 15px;
+  display: block;
+  text-transform: capitalize;
+  font-size: 15px;
+  font-weight: 700;
+  color: gray;
+  /* align-items: center; */
+}
+.Main_menu li:hover > a{
+  color: rgba(8, 93, 100, 0.971);
+  /* border-bottom: 8px solid red; */
+}
+.Main_menu li{
+  position: relative;
+}
+.sub_menu{
+  position: absolute;
+  display: none;
+  width: 250px;
+  top: 100%;
+  left: 0px;
+  background-color: aliceblue;
+  box-shadow: 0 0 5px black;
+}
+.sub_menu li a{
+  display: block;
+  color: black;
+  padding: 15px 20px;
+  transition: .5s;
+}
+.Main_menu li:hover .sub_menu{
+  display: block;   
+  z-index: 999;
+}
+.icon {
+  display: inline-block;
+  text-align: center;
+  line-height: 40px;
+  transition: .5s;
+}
+a > i{
+  margin-left: 5px; 
+}
+.icon{
+  font-size: 25px;
+  /* height: 50px; */
+}
+.icon_space{
+  position: absolute;
+  right: 10px;
+}
+.sub_menu li:hover >a{
+  padding-left: 25px;
+}
+.peta_menu{
+  position: absolute;
+  display: none;
+  width: 250px;
+  top: 0;
+  left: 100%;
+  background-color: aliceblue;
+  box-shadow: 0 0 5px black;
+}
+.sub_menu li:hover .peta_menu{
+  display: block;
+  color: black;
+  padding: 15px 20px;
+}
+.Main_menu li:hover .sub_menu{
+  border-top: 3px solid orangered;
+}
+.sub_menu li:hover .peta_menu{
+  border-top: 3px solid orangered;
+}
